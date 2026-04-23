@@ -1,4 +1,5 @@
 import { MyComponent } from './MyComponent.jsx'
+import { MyComponent_2 } from './MyComponent_2.jsx'
 import React from 'react'
 
 // React компоненты должны начинаться с заглавной буквы, если с маленьков, то react воспринимает как html элемент
@@ -34,6 +35,7 @@ export const App = () => {
       <>
         <div>можно использовать пустые скобки вместо React.Fragment</div>
       </>
+      <MyComponent_2/>
     </div>
   )
 }
