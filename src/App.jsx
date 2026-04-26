@@ -1,5 +1,6 @@
 import { MyComponent } from './MyComponent.jsx'
 import { MyComponent_2 } from './MyComponent_2.jsx'
+import { MyComponent_3 } from './MyComponent_3.jsx'
 import React from 'react'
 
 // React компоненты должны начинаться с заглавной буквы, если с маленьков, то react воспринимает как html элемент
@@ -24,18 +25,7 @@ export const App = () => {
   return (
     <div>
       <h1>Hello React</h1>
-      <MyComponent name="Pavel"></MyComponent>
-      { element }
-      <div>{ img }</div>
-      { component }
-      { elem2 }
-      <React.Fragment>
-        <div>тестируем fragment</div>
-      </React.Fragment>
-      <>
-        <div>можно использовать пустые скобки вместо React.Fragment</div>
-      </>
-      <MyComponent_2/>
+      <MyComponent_3/>
     </div>
   )
 }
