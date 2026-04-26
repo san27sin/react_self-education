@@ -22,11 +22,15 @@ export const App = () => {
   const age = 29
   const elem2 = <p>You are {age} years old.</p>
 
+  const handleClick = () => console.log('Hello React')
+
   return (
     <div>
       <h1>Hello React</h1>
-      <MyComponent_3/>
-      <MyComponent_Second/>
+      <MyComponent
+        name='React'
+        click={handleClick}
+      />
     </div>
   )
 }
