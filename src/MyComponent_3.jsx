@@ -29,3 +29,10 @@ export const MyComponent_3 = () => {
     </div>
   )
 }
+
+// по факту можно еще создать один компонент в jsx
+export const MyComponent_Second = () => {
+  return (
+    <div>еще один компонент</div>
+  )
+}

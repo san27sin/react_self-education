@@ -1,6 +1,6 @@
 import { MyComponent } from './MyComponent.jsx'
 import { MyComponent_2 } from './MyComponent_2.jsx'
-import { MyComponent_3 } from './MyComponent_3.jsx'
+import { MyComponent_3, MyComponent_Second } from './MyComponent_3.jsx'
 import React from 'react'
 
 // React компоненты должны начинаться с заглавной буквы, если с маленьков, то react воспринимает как html элемент
@@ -26,6 +26,7 @@ export const App = () => {
     <div>
       <h1>Hello React</h1>
       <MyComponent_3/>
+      <MyComponent_Second/>
     </div>
   )
 }
