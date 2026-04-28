@@ -24,12 +24,26 @@ export const App = () => {
 
   const handleClick = () => console.log('Hello React')
 
+  const user = {
+    name: 'Alice',
+    age: 30
+  }
+
+  const admin = {
+    id: 123,
+    rank: 'one'
+  }
+
+  // пропс так же можно передать спред оператором
+
   return (
     <div>
       <h1>Hello React</h1>
       <MyComponent
         name='React'
         click={handleClick}
+        user={user}
+        {...admin}
       />
     </div>
   )
