@@ -3,6 +3,9 @@ import { MyComponent_2 } from './MyComponent_2.jsx'
 import { MyComponent_3, MyComponent_Second } from './MyComponent_3.jsx'
 import React from 'react'
 import { Button } from './Button.jsx'
+import { ParentComponents } from './props/ParentComponents.jsx'
+import { List } from './List.jsx'
+
 
 // React компоненты должны начинаться с заглавной буквы, если с маленьков, то react воспринимает как html элемент
 // расширение .jsx - используется синтаксическое расширение JavaScript, позволяющее писать HTML-подобную разметку прямо внутри JavaScript-кода.
@@ -39,6 +42,11 @@ export const App = () => {
 
   // пропс так же можно передать спред оператором
 
+  const parentProps = { message: 'Hello World....' }
+
+  const fruits = ['яблоко', 'банан', 'апельсин']
+  const moreFruits = [...fruits, 'ананас', 'манго']
+
   return (
     <div>
       <h1>Hello React</h1>
@@ -53,6 +61,8 @@ export const App = () => {
         onClick={() => alert('Button clicked')}
         {...allProps}
       />
+      <ParentComponents {...parentProps} />
+      <List items={moreFruits}></List>
     </div>
   )
 }
