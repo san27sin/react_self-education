@@ -2,6 +2,7 @@ import { MyComponent } from './MyComponent.jsx'
 import { MyComponent_2 } from './MyComponent_2.jsx'
 import { MyComponent_3, MyComponent_Second } from './MyComponent_3.jsx'
 import React from 'react'
+import { Button } from './Button.jsx'
 
 // React компоненты должны начинаться с заглавной буквы, если с маленьков, то react воспринимает как html элемент
 // расширение .jsx - используется синтаксическое расширение JavaScript, позволяющее писать HTML-подобную разметку прямо внутри JavaScript-кода.
@@ -34,16 +35,23 @@ export const App = () => {
     rank: 'one'
   }
 
+  const allProps = { className: 'btn-primary', type: 'button' }
+
   // пропс так же можно передать спред оператором
 
   return (
     <div>
       <h1>Hello React</h1>
-      <MyComponent
-        name='React'
-        click={handleClick}
-        user={user}
-        {...admin}
+      {/*<MyComponent*/}
+      {/*  name='React'*/}
+      {/*  click={handleClick}*/}
+      {/*  user={user}*/}
+      {/*  {...admin}*/}
+      {/*/>*/}
+      <Button
+        label='Click me'
+        onClick={() => alert('Button clicked')}
+        {...allProps}
       />
     </div>
   )
