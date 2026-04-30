@@ -5,6 +5,7 @@ import React from 'react'
 import { Button } from './Button.jsx'
 import { ParentComponents } from './props/ParentComponents.jsx'
 import { List } from './List.jsx'
+import { Box } from './Box.jsx'
 
 
 // React компоненты должны начинаться с заглавной буквы, если с маленьков, то react воспринимает как html элемент
@@ -63,6 +64,11 @@ export const App = () => {
       />
       <ParentComponents {...parentProps} />
       <List items={moreFruits}></List>
+      <Box>
+        <h1>Заголовок</h1>
+        <p>Текст внутри коробки</p>
+        <MyComponent name="Angular"/>
+      </Box>
     </div>
   )
 }
